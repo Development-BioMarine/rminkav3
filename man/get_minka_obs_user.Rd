@@ -20,6 +20,7 @@ Get all the observations of a specific Minka user.
 \examples{
 \dontrun{
   m_obs <- get_minka_obs(query="Seabream")
-  get_minka_obs_user(as.character(m_obs$user_login[1]))
+  username<- m_obs$user_login[1]
+  get_minka_obs_user(as.character(username))
 }
 }
