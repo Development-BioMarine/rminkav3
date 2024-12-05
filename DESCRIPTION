@@ -1,0 +1,18 @@
+Package: rminkav3
+Type: Package
+Title: Obtaining Information From Minka Through The API
+Version: 0.1.0
+Author: Ramon Servitje
+Maintainer: Ramon Servitje <ramonservitje@gmail.com>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    httr,
+    jsonlite,
+    sf,
+    sp
+RoxygenNote: 7.3.2
