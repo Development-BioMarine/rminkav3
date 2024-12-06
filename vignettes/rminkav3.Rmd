@@ -10,8 +10,7 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
-)
+  comment = "#>")
 ```
 
 ```{r carga, include=FALSE}
@@ -22,6 +21,18 @@ library(leaflet)
 library(magick)
 library(rminkav3)
 ```
+
+<style>
+.leaflet {
+    margin: auto;
+}
+</style>
+
+<style>
+.picture {
+    margin: auto;
+}
+</style>
 
 <a href="https://ggplot2.tidyverse.org"><img src="figures/minka1.png" align="right" height="138" alt="ggplot2 website" /></a>
 
@@ -70,11 +81,9 @@ sard_max_results[,1:6]
 
 #### Taxon search
 
-To return only records of a specific species or taxonomic group, use the `taxon_name` argument. For example, to return observations of anything from the  family, and restricting the search to the year 2015:
+To return only records of a specific species or taxonomic group, use the `taxon_name` argument. For example, to return observations of anything from the family Sparidae, and restricting the search to the year 2022: 
 
 ```{r search2, include = TRUE , echo=TRUE}
-
-#Geting al the Sparidae observations for the year 2022
 
 sparidae <- get_minka_obs(taxon_name  = "Sparidae", year = 2022)
 
@@ -91,8 +100,6 @@ And to return only the seabream fish observations that also mention the term "ba
 
 
 ```{r search3, include = TRUE , echo=TRUE}
-
-##number of Diplodus taxon observations with the term "banc"
 
 sard_banc <- get_minka_obs(taxon_name = "Diplodus", query = "banc")
 
@@ -120,26 +127,22 @@ diplodus_forum <- get_minka_obs(query = "Diplodus sargus", bounds = bounds_forum
 
 diplodus_forum[1,1:6]
 ```   
-#The representation using leaflet
+and the representation using leaflet is:
 
-```{r search9, include = TRUE, echo=TRUE}
+```{r leaflet, include = TRUE, echo=TRUE, fig.pos='center', fig.cap='Leaflet map with the observations'}
+
 
  leaflet() %>%
          addTiles() %>%
          setView(lng = 2.226725, lat = 41.408492, zoom = 16.35) %>%
           addRectangles(lng1 = 2.224977, lat1 =  41.407281,
           lng2 = 2.228652, lat2 = 41.409892) %>%
-          addCircleMarkers (
-            fillColor = "red",
-            fillOpacity = 0.5,
-            color = "black",
+          addMarkers (
             lng = diplodus_forum$longitude, 
             lat = diplodus_forum$latitude,
             label = paste('Id =', as.character(diplodus_forum$id))
-          )
- 
+             )
 ```  
-
 
 ### Other functions
 
@@ -185,7 +188,7 @@ ident
 If you just want all the observations by a user you can download all their observations by user ID. A word of warning though, this can be quite large (easily into the 1000's).
 
 
-```{r search8, include = TRUE , echo=TRUE}
+```{r picture, include = TRUE , echo=TRUE, fig.cap='Picture of an user observation'}
 
 user_obs <- get_minka_obs_user('ramonservitje')
 
@@ -199,7 +202,7 @@ url <- user_obs$image_url[412]
 image <- image_read(url)
 
 # Show the image
-print(image, info = 'Observation of user rramonservitje')
+print(image)
 ```
 
 
