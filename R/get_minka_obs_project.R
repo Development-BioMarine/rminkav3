@@ -11,7 +11,7 @@
 #'  get_minka_obs_project(8, type = "observations")
 #'  get_minka_obs_project("urbamarbio", type="info",raw=FALSE)
 #'}
-#'@importFrom readr
+#'@importFrom utils read.csv
 #' @import httr jsonlite dplyr
 #' @export
 

@@ -50,7 +50,7 @@
 #'   out$meta
 #' }
 #' @importFrom utils read.csv
-#' @import httr jsonlite dplyr sf sp
+#' @import httr jsonlite dplyr sf sp leaflet magick
 #' @export
 
 get_minka_obs <- function(query = NULL, taxon_name = NULL, taxon_id = NULL,
