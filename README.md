@@ -10,6 +10,8 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![R-CMD-check](https://github.com/Development-BioMarine/rminkav3/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Development-BioMarine/rminkav3/actions/workflows/R-CMD-check.yaml)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/rminkav3)](https://CRAN.R-project.org/package=rminkav3)
+[![Codecov test
+coverage](https://codecov.io/gh/Development-BioMarine/rminkav3/graph/badge.svg)](https://app.codecov.io/gh/Development-BioMarine/rminkav3)
 <!-- badges: end -->
 
 The goal of rminkav3 is access Minka observations through the API.
