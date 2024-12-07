@@ -22,11 +22,15 @@ library(magick)
 library(rminkav3)
 ```
 
+<a href="https://ggplot2.tidyverse.org"><img src="figures/minka1.png" align="right" height="138" alt="ggplot2 website" /></a>
+
 <style>
 .leaflet {
     margin: auto;
 }
 </style>
+
+
 
 <style>
 .picture {
@@ -34,7 +38,6 @@ library(rminkav3)
 }
 </style>
 
-<a href="https://ggplot2.tidyverse.org"><img src="figures/minka1.png" align="right" height="138" alt="ggplot2 website" /></a>
 
 ## About
 
@@ -188,7 +191,7 @@ ident
 If you just want all the observations by a user you can download all their observations by user ID. A word of warning though, this can be quite large (easily into the 1000's).
 
 
-```{r picture, include = TRUE , echo=TRUE, fig.cap='Picture of an user observation'}
+```{r picture, include = TRUE , echo=TRUE, fig.cap='Picture of an user observation',fig.pos='center'}
 
 user_obs <- get_minka_obs_user('ramonservitje')
 
