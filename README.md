@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# rminka <a href="https://rpubs.com/rservitje25/1254993"><img src="man/figures/logo.png" align="right" height="138" alt="ggplot2 website" /></a>
+# rminka <a><img src="man/figures/logo.png" align="right" height="138" alt="ggplot2 website" /></a>
 
 <!-- badges: start -->
 
@@ -51,10 +51,10 @@ The goals of the `rminka` package are:
 If you are new to `rminka` you are better off starting with a starting
 web page of `rminka` in the github page of the project.
 
-1.  The main page directions is [minkar
+1.  The main page directions is [rminka
     website](https://development-biomarine.github.io/rminkav3/)
 
-2.  The starting web page is [minkar
+2.  The starting web page is [rminka
     starting](https://development-biomarine.github.io/rminkav3/articles/rminkav3.html)
 
 ## Getting help

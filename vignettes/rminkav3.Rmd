@@ -6,7 +6,6 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
-<a><img src="figures/logo.png" align="right" height="138"/></a>
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -190,7 +189,7 @@ get_minka_obs_id(ident)[1:5]
 If you just want all the observations by a user you can download all their observations by user ID. A word of warning though, this can be quite large (easily into the 1000's).
 
 
-```{r picture, include = TRUE , echo=TRUE, fig.cap='Picture of an user observation',fig.pos='center'}
+```{r picture, include = TRUE , echo=TRUE, fig.cap='Picture of an user observation',fig.pos='center',fig.height=230}
 
 user_obs <- get_minka_obs_user('ramonservitje')
 

@@ -1,10 +1,10 @@
 name: Document
 title:
 username:
-account: rpubs
-server: rpubs.com
-hostUrl: rpubs.com
-appId: https://api.rpubs.com/api/v1/document/1254991/6ed89e70c34d4e11ad6e9d62aa2024e6
-bundleId: https://api.rpubs.com/api/v1/document/1254991/6ed89e70c34d4e11ad6e9d62aa2024e6
-url: http://rpubs.com/publish/claim/1254991/64e3a04f525747baab4bf455f4676708
+account:
+server:
+hostUrl:
+appId:
+bundleId:
+url:
 version: 1

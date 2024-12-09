@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# rminka <a href="https://rpubs.com/rservitje25/1254993"><img src="man/figures/logo.png" align="right" height="138" alt="ggplot2 website" /></a>
+# rminka <a><img src="man/figures/logo.png" align="right" height="138" alt="ggplot2 website" /></a>
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
@@ -53,9 +53,9 @@ The goals of the `rminka`  package are:
 
 If you are new to `rminka` you are better off starting with a starting web page of `rminka` in the github page of the project.
 
-1. The main page directions is [minkar website](https://development-biomarine.github.io/rminkav3/)
+1. The main page directions is [rminka website](https://development-biomarine.github.io/rminkav3/)
 
-1. The starting web page is [minkar starting](https://development-biomarine.github.io/rminkav3/articles/rminkav3.html)
+1. The starting web page is [rminka starting](https://development-biomarine.github.io/rminkav3/articles/rminkav3.html)
 
 
 ## Getting help
