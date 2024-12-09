@@ -63,9 +63,9 @@ If you are new to `rminka` you are better off starting with a starting web page 
 There are two main places to get help with `rminka`:
 
 1.  The [RStudio community][community] is a friendly place to ask any
-    questions about ggplot2.
+    questions about R.
 
-1.  [Stack Overflow][so] is a great source of answers to common ggplot2
+1.  [Stack Overflow][so] is a great source of answers to common R
     questions. It is also a great place to get help, once you have
     created a reproducible example that illustrates your problem.
 
