@@ -1,9 +1,7 @@
 
-\\
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# minkarv3 <a href="https://ggplot2.tidyverse.org"><img src="man/figures/logo.png" align="right" height="138" alt="ggplot2 website" /></a>
+# rminka <a href="https://rpubs.com/rservitje25/1254993"><img src="man/figures/logo.png" align="right" height="138" alt="ggplot2 website" /></a>
 
 <!-- badges: start -->
 
@@ -30,58 +28,38 @@ pak::pak("Development-BioMarine/rminkav3")
 
 ## Usage
 
-It’s hard to succinctly describe how ggplot2 works because it embodies a
-deep philosophy of visualisation. However, in most cases you start with
-`ggplot()`, supply a dataset and aesthetic mapping (with `aes()`). You
-then add on layers (like `geom_point()` or `geom_histogram()`), scales
-(like `scale_colour_brewer()`), faceting specifications (like
-`facet_wrap()`) and coordinate systems (like `coord_flip()`).
+Minka is a citizen science app built for recording, organizing and
+sharing naturalistic observations of animals and plants. It allows
+anyone to become a researcher and that the observations we make serve
+for scientific use. Minka also allows users to create their own
+projects.
 
-``` r
-library(ggplot2)
+The link to access Minka’s website is
 
-ggplot(mpg, aes(displ, hwy, colour = class)) + 
-  geom_point()
-```
+<https://minka-sdg.org/>
 
-<img src="man/figures/README-example-1.png" alt="Scatterplot of engine displacement versus highway miles per gallon, for 234 cars coloured by 7 'types' of car. The displacement and miles per gallon are inversely correlated." width="100%" />
-\## Using rminka
+The goals of the `rminka` package are:
 
-If you are new to ggplot2 you are better off starting with a systematic
-introduction, rather than trying to learn from reading individual
-documentation pages. Currently, there are three good places to start:
+1.  Directly access the data stored in Minka to be able to process them
+    with R through the API.
 
-1.  The \[Data Visualization\]\[r4ds-vis\] and
-    \[Communication\]\[r4ds-comm\] chapters in \[R for Data
-    Science\]\[r4ds\]. R for Data Science is designed to give you a
-    comprehensive introduction to the
-    [tidyverse](https://www.tidyverse.org), and these two chapters will
-    get you up to speed with the essentials of ggplot2 as quickly as
-    possible.
+2.  Treat the data to be able to use them directly with other packages
+    such as `vegan` or `dismo`.
 
-2.  If you’d like to take an online course, try [Data Visualization in R
-    With
-    ggplot2](https://learning.oreilly.com/videos/data-visualization-in/9781491963661/)
-    by Kara Woo.
+## Using rminka
 
-3.  If you’d like to follow a webinar, try [Plotting Anything with
-    ggplot2](https://youtu.be/h29g21z0a68) by Thomas Lin Pedersen.
+If you are new to `rminka` you are better off starting with a starting
+web page of `rminka` in the github page of the project.
 
-4.  If you want to dive into making common graphics as quickly as
-    possible, I recommend \[The R Graphics Cookbook\]\[cookbook\] by
-    Winston Chang. It provides a set of recipes to solve common graphics
-    problems.
+1.  The main page directions is [minkar
+    website](https://development-biomarine.github.io/rminkav3/)
 
-If you’ve mastered the basics and want to learn more, read [ggplot2:
-Elegant Graphics for Data Analysis](https://ggplot2-book.org). It
-describes the theoretical underpinnings of ggplot2 and shows you how all
-the pieces fit together. This book helps you understand the theory that
-underpins ggplot2, and will help you create new types of graphics
-specifically tailored to your needs.
+2.  The starting web page is [minkar
+    starting](https://development-biomarine.github.io/rminkav3/articles/rminkav3.html)
 
 ## Getting help
 
-There are two main places to get help with ggplot2:
+There are two main places to get help with `rminka`:
 
 1.  The [RStudio community](https://forum.posit.co/) is a friendly place
     to ask any questions about ggplot2.
@@ -89,6 +67,3 @@ There are two main places to get help with ggplot2:
 2.  \[Stack Overflow\]\[so\] is a great source of answers to common
     ggplot2 questions. It is also a great place to get help, once you
     have created a reproducible example that illustrates your problem.
-
-For more information go to [Minkar
-website](https://development-biomarine.github.io/rminkav3/)
