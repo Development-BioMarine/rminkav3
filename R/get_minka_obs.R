@@ -8,6 +8,7 @@
 #' descendant taxa. Note that names are not unique, so if the name matches multiple taxa, no
 #' observations may be returned.
 #' @param taxon_id Filter by Minka taxon ID. Note that this will also select observations of descendant taxa.
+#' @param scientific_name Filter by Minka scientific name.
 #' @param place_id Filter by Minka place ID.
 #' @param geo Flag for returning only results that are georeferenced, TRUE will exclude
 #' non-georeferenced results, but they cannot be excluded.
@@ -54,7 +55,8 @@
 #' @export
 
 get_minka_obs <- function(query = NULL, taxon_name = NULL, taxon_id = NULL,
-                         place_id = NULL, quality = NULL, geo = NULL,
+                         scientific_name = NULL,place_id = NULL,
+                         quality = NULL, geo = NULL,
                          annotation = NULL, year = NULL, month = NULL,
                          day = NULL, bounds = NULL,
                          maxresults = 5000, meta = FALSE) {
@@ -69,7 +71,7 @@ get_minka_obs <- function(query = NULL, taxon_name = NULL, taxon_id = NULL,
                       }
 
 
-  arg_list <- list(query, taxon_name, taxon_id, place_id, quality, geo,
+  arg_list <- list(query, taxon_name, taxon_id,scientific_name, place_id, quality, geo,
                    year, month, day, bounds)
 
   arg_vals <- lapply(arg_list, is.null)
@@ -95,6 +97,10 @@ get_minka_obs <- function(query = NULL, taxon_name = NULL, taxon_id = NULL,
 
                       if(!is.null(taxon_id)){
                         search <-  paste0(search, "&taxon_id=", gsub(" ","+", taxon_id))
+                      }
+
+                      if(!is.null(scientific_name)){
+                        search <-  paste0(search, "&scientific_name=", gsub(" ","+", scientific_name))
                       }
 
                         if(!is.null(place_id)){
