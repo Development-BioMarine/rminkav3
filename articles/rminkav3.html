@@ -110,9 +110,9 @@ observations.</p>
 <code class="sourceCode R"><span><span class="va">sard</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_minka_obs.html">get_minka_obs</a></span><span class="op">(</span>query <span class="op">=</span> <span class="st">"seabream"</span>, year <span class="op">=</span> <span class="fl">2021</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">sard</span><span class="op">$</span><span class="va">scientific_name</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "Lithognathus mormyrus"   "Sparidae"               </span></span>
-<span><span class="co">#&gt;  [3] "Diplodus sargus"         "Diplodus annularis"     </span></span>
-<span><span class="co">#&gt;  [5] "Diplodus vulgaris"       "Oblada melanura"        </span></span>
+<span><span class="co">#&gt;  [1] "Diplodus vulgaris"       "Oblada melanura"        </span></span>
+<span><span class="co">#&gt;  [3] "Lithognathus mormyrus"   "Diplodus sargus"        </span></span>
+<span><span class="co">#&gt;  [5] "Sparidae"                "Diplodus annularis"     </span></span>
 <span><span class="co">#&gt;  [7] "Diplodus puntazzo"       "Sparus aurata"          </span></span>
 <span><span class="co">#&gt;  [9] "Pagellus bogaraveo"      "Diplodus cadenati"      </span></span>
 <span><span class="co">#&gt; [11] "Pagellus acarne"         "Spondyliosoma cantharus"</span></span>
@@ -128,27 +128,27 @@ argument.</p>
 <span></span>
 <span><span class="va">sard_max_results</span><span class="op">[</span>,<span class="fl">1</span><span class="op">:</span><span class="fl">6</span><span class="op">]</span></span>
 <span><span class="co">#&gt;          scientific_name                  datetime description</span></span>
-<span><span class="co">#&gt; 1  Lithognathus mormyrus 2021-10-03 11:55:00 +0200            </span></span>
-<span><span class="co">#&gt; 2               Sparidae 2021-10-03 11:55:00 +0200            </span></span>
-<span><span class="co">#&gt; 3        Diplodus sargus 2021-08-05 13:23:00 +0200            </span></span>
-<span><span class="co">#&gt; 4     Diplodus annularis 2021-08-04 11:19:00 +0200            </span></span>
-<span><span class="co">#&gt; 5        Diplodus sargus 2021-08-03 15:19:00 +0200            </span></span>
-<span><span class="co">#&gt; 6      Diplodus vulgaris 2021-08-03 15:19:00 +0200            </span></span>
-<span><span class="co">#&gt; 7        Oblada melanura 2021-08-03 15:13:00 +0200            </span></span>
-<span><span class="co">#&gt; 8      Diplodus vulgaris 2021-07-28 08:51:00 +0200            </span></span>
-<span><span class="co">#&gt; 9        Oblada melanura 2021-07-25 12:10:00 +0200            </span></span>
-<span><span class="co">#&gt; 10       Diplodus sargus 2021-07-04 09:52:00 +0200            </span></span>
-<span><span class="co">#&gt;          place_guess latitude longitude</span></span>
-<span><span class="co">#&gt; 1  Barcelona, España 41.26480  2.005203</span></span>
-<span><span class="co">#&gt; 2  Barcelona, España 41.26480  2.005200</span></span>
-<span><span class="co">#&gt; 3              Spain 40.05483  3.883954</span></span>
-<span><span class="co">#&gt; 4              Spain 39.95923  4.265633</span></span>
-<span><span class="co">#&gt; 5                    39.93600  3.937817</span></span>
-<span><span class="co">#&gt; 6                    39.93600  3.937833</span></span>
-<span><span class="co">#&gt; 7                    39.93646  3.938442</span></span>
-<span><span class="co">#&gt; 8                    41.08978  1.228733</span></span>
-<span><span class="co">#&gt; 9                    41.08981  1.228671</span></span>
-<span><span class="co">#&gt; 10                   41.08979  1.228717</span></span></code></pre></div>
+<span><span class="co">#&gt; 1      Diplodus vulgaris 2021-09-09 22:23:00 +0200            </span></span>
+<span><span class="co">#&gt; 2        Oblada melanura 2021-09-08 01:01:00 +0200  la de baix</span></span>
+<span><span class="co">#&gt; 3        Oblada melanura 2021-09-08 00:58:00 +0200            </span></span>
+<span><span class="co">#&gt; 4  Lithognathus mormyrus 2021-09-05 19:06:00 +0200            </span></span>
+<span><span class="co">#&gt; 5        Diplodus sargus 2021-09-05 18:46:00 +0200            </span></span>
+<span><span class="co">#&gt; 6  Lithognathus mormyrus 2021-09-06 15:38:00 +0200            </span></span>
+<span><span class="co">#&gt; 7        Oblada melanura 2021-09-06 15:36:00 +0200            </span></span>
+<span><span class="co">#&gt; 8        Diplodus sargus 2021-05-05 10:57:00 +0200            </span></span>
+<span><span class="co">#&gt; 9  Lithognathus mormyrus 2021-10-03 11:55:00 +0200            </span></span>
+<span><span class="co">#&gt; 10              Sparidae 2021-10-03 11:55:00 +0200            </span></span>
+<span><span class="co">#&gt;                          place_guess latitude longitude</span></span>
+<span><span class="co">#&gt; 1                              Spain 38.72415  1.459591</span></span>
+<span><span class="co">#&gt; 2                              Spain 38.69315  1.388051</span></span>
+<span><span class="co">#&gt; 3                              Spain 38.69315  1.388303</span></span>
+<span><span class="co">#&gt; 4              Illes Balears, España 38.94113  1.234613</span></span>
+<span><span class="co">#&gt; 5              Illes Balears, España 38.94117  1.234261</span></span>
+<span><span class="co">#&gt; 6                              Spain 39.01065  1.296373</span></span>
+<span><span class="co">#&gt; 7                              Spain 39.01067  1.296395</span></span>
+<span><span class="co">#&gt; 8  Torredembarra, Tarrahgona, España 41.13753  1.407709</span></span>
+<span><span class="co">#&gt; 9                  Barcelona, España 41.26480  2.005203</span></span>
+<span><span class="co">#&gt; 10                 Barcelona, España 41.26480  2.005200</span></span></code></pre></div>
 </div>
 <div class="section level4">
 <h4 id="taxon-search">Taxon search<a class="anchor" aria-label="anchor" href="#taxon-search"></a>
@@ -169,11 +169,11 @@ search to the year 2022:</p>
 <span><span class="co">#The species are:</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">sparidae</span><span class="op">$</span><span class="va">scientific_name</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "Pagrus pagrus"           "Diplodus cervinus"      </span></span>
-<span><span class="co">#&gt;  [3] "Diplodus vulgaris"       "Oblada melanura"        </span></span>
-<span><span class="co">#&gt;  [5] "Diplodus puntazzo"       "Diplodus sargus"        </span></span>
-<span><span class="co">#&gt;  [7] "Sparus aurata"           "Lithognathus mormyrus"  </span></span>
-<span><span class="co">#&gt;  [9] "Sarpa salpa"             "Boops boops"            </span></span>
+<span><span class="co">#&gt;  [1] "Diplodus puntazzo"       "Sparus aurata"          </span></span>
+<span><span class="co">#&gt;  [3] "Sarpa salpa"             "Diplodus sargus"        </span></span>
+<span><span class="co">#&gt;  [5] "Oblada melanura"         "Pagrus pagrus"          </span></span>
+<span><span class="co">#&gt;  [7] "Diplodus cervinus"       "Diplodus vulgaris"      </span></span>
+<span><span class="co">#&gt;  [9] "Lithognathus mormyrus"   "Boops boops"            </span></span>
 <span><span class="co">#&gt; [11] "Dentex dentex"           "Pagellus acarne"        </span></span>
 <span><span class="co">#&gt; [13] "Pagellus erythrinus"     "Dentex gibbosus"        </span></span>
 <span><span class="co">#&gt; [15] "Spondyliosoma cantharus" "Sparidae"               </span></span>
@@ -251,7 +251,7 @@ name as an Minka slug.</p>
 <span><span class="co">## Just get info about a project</span></span>
 <span><span class="va">urbamar</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_minka_obs_project.html">get_minka_obs_project</a></span><span class="op">(</span><span class="st">"urbamarbio"</span>, type <span class="op">=</span> <span class="st">"info"</span>, raw <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span><span class="va">urbamar</span><span class="op">$</span><span class="va">project_observations_count</span></span>
-<span><span class="co">#&gt; [1] 55948</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] 62951</span></span></code></pre></div>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Now get all the observations for that project</span></span>
 <span><span class="va">urbamar_obs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_minka_obs_project.html">get_minka_obs_project</a></span><span class="op">(</span><span class="st">"biodiversitat-marina-de-les-platges-de-sant-adria-del-besos"</span>, type <span class="op">=</span> <span class="st">"observations"</span><span class="op">)</span></span>
@@ -261,23 +261,24 @@ name as an Minka slug.</p>
 <span><span class="co">#&gt; Getting records up to 800</span></span>
 <span><span class="co">#&gt; Getting records up to 1000</span></span>
 <span><span class="co">#&gt; Getting records up to 1200</span></span>
+<span><span class="co">#&gt; Getting records up to 1400</span></span>
 <span><span class="co">#&gt; Done.</span></span>
 <span></span>
 <span><span class="co">#Geting the first 5 observations</span></span>
 <span></span>
 <span><span class="va">urbamar_obs</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>,<span class="fl">8</span><span class="op">:</span><span class="fl">1</span><span class="op">]</span></span>
-<span><span class="co">#&gt;         species_guess timeframe map_scale    longitude      latitude</span></span>
-<span><span class="co">#&gt; 1        Rabosa groga        NA        NA 2.2384089231 41.4250151953</span></span>
-<span><span class="co">#&gt; 2   Bavosa de plomall        NA        NA 2.2384089231 41.4250151953</span></span>
-<span><span class="co">#&gt; 3             Morruda        NA        NA 2.2384089231 41.4250151953</span></span>
-<span><span class="co">#&gt; 4 Limaria tuberculata        NA        NA 2.2384089231 41.4250151953</span></span>
-<span><span class="co">#&gt; 5             Variada        NA        NA 2.2384089231 41.4250151953</span></span>
-<span><span class="co">#&gt;   description observed_on     id</span></span>
-<span><span class="co">#&gt; 1        &lt;NA&gt;  2024-09-10 354734</span></span>
-<span><span class="co">#&gt; 2        &lt;NA&gt;  2024-09-10 354735</span></span>
-<span><span class="co">#&gt; 3        &lt;NA&gt;  2024-09-10 354736</span></span>
-<span><span class="co">#&gt; 4        &lt;NA&gt;  2024-09-10 354737</span></span>
-<span><span class="co">#&gt; 5        &lt;NA&gt;  2024-09-10 354738</span></span></code></pre></div>
+<span><span class="co">#&gt;   species_guess timeframe map_scale    longitude      latitude description</span></span>
+<span><span class="co">#&gt; 1   Fonoll marí        NA        NA 2.2300313792 41.4148869292            </span></span>
+<span><span class="co">#&gt; 2  Lliri de mar        NA        NA 2.2305789031 41.4144661431            </span></span>
+<span><span class="co">#&gt; 3   Rave de mar        NA        NA 2.2327043116 41.4185888786            </span></span>
+<span><span class="co">#&gt; 4  Panical marí        NA        NA 2.2325603907 41.4187706159            </span></span>
+<span><span class="co">#&gt; 5   Trèvol marí        NA        NA 2.2325673907 41.4187776159            </span></span>
+<span><span class="co">#&gt;   observed_on     id</span></span>
+<span><span class="co">#&gt; 1  2024-12-21 406132</span></span>
+<span><span class="co">#&gt; 2  2024-12-21 406133</span></span>
+<span><span class="co">#&gt; 3  2024-12-21 406134</span></span>
+<span><span class="co">#&gt; 4  2024-12-21 406135</span></span>
+<span><span class="co">#&gt; 5  2024-12-21 406136</span></span></code></pre></div>
 </div>
 <div class="section level4">
 <h4 id="get-observation-details">Get observation details<a class="anchor" aria-label="anchor" href="#get-observation-details"></a>
@@ -318,12 +319,12 @@ quite large (easily into the 1000’s).</p>
 <span><span class="va">user_obs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_minka_obs_user.html">get_minka_obs_user</a></span><span class="op">(</span><span class="st">'ramonservitje'</span><span class="op">)</span></span>
 <span></span>
 <span><span class="op">(</span><span class="va">user_obs</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>,<span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">]</span></span>
-<span><span class="co">#&gt;        scientific_name                  datetime description</span></span>
-<span><span class="co">#&gt; 1  Porphyrio porphyrio 2024-11-10 12:03:00 +0100            </span></span>
-<span><span class="co">#&gt; 2   Podiceps cristatus 2024-11-10 13:21:00 +0100            </span></span>
-<span><span class="co">#&gt; 3   Circus aeruginosus 2024-11-10 13:32:00 +0100            </span></span>
-<span><span class="co">#&gt; 4 Podiceps nigricollis 2024-11-10 13:48:00 +0100            </span></span>
-<span><span class="co">#&gt; 5    Pelophylax perezi 2024-11-09 12:10:00 +0100</span></span>
+<span><span class="co">#&gt;           scientific_name                  datetime description</span></span>
+<span><span class="co">#&gt; 1   Oryctolagus cuniculus 2025-06-18 06:48:00 +0200            </span></span>
+<span><span class="co">#&gt; 2    Dicentrarchus labrax 2025-05-18 12:20:00 +0200            </span></span>
+<span><span class="co">#&gt; 3       Diplodus puntazzo 2025-05-18 12:20:00 +0200            </span></span>
+<span><span class="co">#&gt; 4        Patella caerulea 2025-05-18 12:38:00 +0200            </span></span>
+<span><span class="co">#&gt; 5 Asparagopsis taxiformis 2025-05-18 12:55:00 +0200</span></span>
 <span></span>
 <span><span class="co">#it is possible to view the images with the links in Minka</span></span>
 <span></span>
@@ -337,7 +338,7 @@ quite large (easily into the 1000’s).</p>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 1 × 7</span></span></span>
 <span><span class="co">#&gt;   format width height colorspace matte filesize density</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> JPEG     500    397 sRGB       FALSE   <span style="text-decoration: underline;">173</span>509 72x72</span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> JPEG     500    375 sRGB       FALSE   <span style="text-decoration: underline;">199</span>816 72x72</span></span></code></pre></div>
 <div class="figure">
 <img src="rminkav3_files/figure-html/picture-1.png" alt="Picture of an user observation" width="250"><p class="caption">
 Picture of an user observation
@@ -357,7 +358,7 @@ Picture of an user observation
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
 </div>
 
     </footer>
