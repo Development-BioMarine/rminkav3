@@ -110,7 +110,7 @@ observations.</p>
 <code class="sourceCode R"><span><span class="va">sard</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_minka_obs.html">get_minka_obs</a></span><span class="op">(</span>query <span class="op">=</span> <span class="st">"seabream"</span>, year <span class="op">=</span> <span class="fl">2021</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">sard</span><span class="op">$</span><span class="va">scientific_name</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "Diplodus vulgaris"       "Oblada melanura"        </span></span>
+<span><span class="co">#&gt;  [1] "Diplodus vulgaris"       "Oblada melanurus"       </span></span>
 <span><span class="co">#&gt;  [3] "Lithognathus mormyrus"   "Diplodus sargus"        </span></span>
 <span><span class="co">#&gt;  [5] "Sparidae"                "Diplodus annularis"     </span></span>
 <span><span class="co">#&gt;  [7] "Diplodus puntazzo"       "Sparus aurata"          </span></span>
@@ -129,12 +129,12 @@ argument.</p>
 <span><span class="va">sard_max_results</span><span class="op">[</span>,<span class="fl">1</span><span class="op">:</span><span class="fl">6</span><span class="op">]</span></span>
 <span><span class="co">#&gt;          scientific_name                  datetime description</span></span>
 <span><span class="co">#&gt; 1      Diplodus vulgaris 2021-09-09 22:23:00 +0200            </span></span>
-<span><span class="co">#&gt; 2        Oblada melanura 2021-09-08 01:01:00 +0200  la de baix</span></span>
-<span><span class="co">#&gt; 3        Oblada melanura 2021-09-08 00:58:00 +0200            </span></span>
+<span><span class="co">#&gt; 2       Oblada melanurus 2021-09-08 01:01:00 +0200  la de baix</span></span>
+<span><span class="co">#&gt; 3       Oblada melanurus 2021-09-08 00:58:00 +0200            </span></span>
 <span><span class="co">#&gt; 4  Lithognathus mormyrus 2021-09-05 19:06:00 +0200            </span></span>
 <span><span class="co">#&gt; 5        Diplodus sargus 2021-09-05 18:46:00 +0200            </span></span>
 <span><span class="co">#&gt; 6  Lithognathus mormyrus 2021-09-06 15:38:00 +0200            </span></span>
-<span><span class="co">#&gt; 7        Oblada melanura 2021-09-06 15:36:00 +0200            </span></span>
+<span><span class="co">#&gt; 7       Oblada melanurus 2021-09-06 15:36:00 +0200            </span></span>
 <span><span class="co">#&gt; 8        Diplodus sargus 2021-05-05 10:57:00 +0200            </span></span>
 <span><span class="co">#&gt; 9  Lithognathus mormyrus 2021-10-03 11:55:00 +0200            </span></span>
 <span><span class="co">#&gt; 10              Sparidae 2021-10-03 11:55:00 +0200            </span></span>
@@ -171,7 +171,7 @@ search to the year 2022:</p>
 <span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">sparidae</span><span class="op">$</span><span class="va">scientific_name</span><span class="op">)</span></span>
 <span><span class="co">#&gt;  [1] "Diplodus puntazzo"       "Sparus aurata"          </span></span>
 <span><span class="co">#&gt;  [3] "Sarpa salpa"             "Diplodus sargus"        </span></span>
-<span><span class="co">#&gt;  [5] "Oblada melanura"         "Pagrus pagrus"          </span></span>
+<span><span class="co">#&gt;  [5] "Oblada melanurus"        "Pagrus pagrus"          </span></span>
 <span><span class="co">#&gt;  [7] "Diplodus cervinus"       "Diplodus vulgaris"      </span></span>
 <span><span class="co">#&gt;  [9] "Lithognathus mormyrus"   "Boops boops"            </span></span>
 <span><span class="co">#&gt; [11] "Dentex dentex"           "Pagellus acarne"        </span></span>
@@ -251,7 +251,7 @@ name as an Minka slug.</p>
 <span><span class="co">## Just get info about a project</span></span>
 <span><span class="va">urbamar</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_minka_obs_project.html">get_minka_obs_project</a></span><span class="op">(</span><span class="st">"urbamarbio"</span>, type <span class="op">=</span> <span class="st">"info"</span>, raw <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span><span class="va">urbamar</span><span class="op">$</span><span class="va">project_observations_count</span></span>
-<span><span class="co">#&gt; [1] 62951</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] 64008</span></span></code></pre></div>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Now get all the observations for that project</span></span>
 <span><span class="va">urbamar_obs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_minka_obs_project.html">get_minka_obs_project</a></span><span class="op">(</span><span class="st">"biodiversitat-marina-de-les-platges-de-sant-adria-del-besos"</span>, type <span class="op">=</span> <span class="st">"observations"</span><span class="op">)</span></span>
@@ -268,17 +268,17 @@ name as an Minka slug.</p>
 <span></span>
 <span><span class="va">urbamar_obs</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>,<span class="fl">8</span><span class="op">:</span><span class="fl">1</span><span class="op">]</span></span>
 <span><span class="co">#&gt;   species_guess timeframe map_scale    longitude      latitude description</span></span>
-<span><span class="co">#&gt; 1   Fonoll marí        NA        NA 2.2300313792 41.4148869292            </span></span>
-<span><span class="co">#&gt; 2  Lliri de mar        NA        NA 2.2305789031 41.4144661431            </span></span>
-<span><span class="co">#&gt; 3   Rave de mar        NA        NA 2.2327043116 41.4185888786            </span></span>
-<span><span class="co">#&gt; 4  Panical marí        NA        NA 2.2325603907 41.4187706159            </span></span>
-<span><span class="co">#&gt; 5   Trèvol marí        NA        NA 2.2325673907 41.4187776159            </span></span>
+<span><span class="co">#&gt; 1  Lliri de mar        NA        NA 2.2305789031 41.4144661431            </span></span>
+<span><span class="co">#&gt; 2   Rave de mar        NA        NA 2.2327043116 41.4185888786            </span></span>
+<span><span class="co">#&gt; 3  Panical marí        NA        NA 2.2325603907 41.4187706159            </span></span>
+<span><span class="co">#&gt; 4   Trèvol marí        NA        NA 2.2325673907 41.4187776159            </span></span>
+<span><span class="co">#&gt; 5      olivarda        NA        NA 2.2325743907 41.4187846159            </span></span>
 <span><span class="co">#&gt;   observed_on     id</span></span>
-<span><span class="co">#&gt; 1  2024-12-21 406132</span></span>
-<span><span class="co">#&gt; 2  2024-12-21 406133</span></span>
-<span><span class="co">#&gt; 3  2024-12-21 406134</span></span>
-<span><span class="co">#&gt; 4  2024-12-21 406135</span></span>
-<span><span class="co">#&gt; 5  2024-12-21 406136</span></span></code></pre></div>
+<span><span class="co">#&gt; 1  2024-12-21 406133</span></span>
+<span><span class="co">#&gt; 2  2024-12-21 406134</span></span>
+<span><span class="co">#&gt; 3  2024-12-21 406135</span></span>
+<span><span class="co">#&gt; 4  2024-12-21 406136</span></span>
+<span><span class="co">#&gt; 5  2024-12-21 406137</span></span></code></pre></div>
 </div>
 <div class="section level4">
 <h4 id="get-observation-details">Get observation details<a class="anchor" aria-label="anchor" href="#get-observation-details"></a>
