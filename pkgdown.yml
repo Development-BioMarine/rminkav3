@@ -3,7 +3,7 @@ pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   rminkav3: rminkav3.html
-last_built: 2025-08-06T17:29Z
+last_built: 2025-08-06T17:32Z
 urls:
   reference: https://development-biomarine.github.io/rminkav3/reference
   article: https://development-biomarine.github.io/rminkav3/articles
