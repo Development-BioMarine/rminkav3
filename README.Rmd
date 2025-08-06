@@ -47,7 +47,7 @@ The goals of the `rminka`  package are:
 
 1. Directly access the data stored in Minka to be able to process them with R through the API.
 
-1. Treat the data to be able to use them directly with other packages such as `vegan` or `dismo`.
+1. Treat the data to be able to use them directly with other packages such as `vegan`, `biodiversityR` or `dismo`.
 
 ## Using rminka
 
